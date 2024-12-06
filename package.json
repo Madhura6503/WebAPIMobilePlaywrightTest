@@ -2,7 +2,10 @@
   "name": "webapimobileplaywrightproject",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:web:ui": "playwright test  --workers=2 --retries=1 --grep @web-ui",
+    "test:apitest1": "playwright test --workers=2 --retries=1 --grep @apitest1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
